@@ -13,7 +13,9 @@
           {{ card.text }}
         </b-card-text>
         <div v-if="card.bt">
-          <b-button href="/construction" class="bt-custom"  variant="outline">{{ card.btTxt }} </b-button>
+          <b-button class="bt-custom bt-card"  variant="outline">
+            <router-link to="/construction"> {{ card.btTxt }} </router-link>
+          </b-button>
         </div>
       </b-card>
     </div>
@@ -32,8 +34,21 @@ export default {
     border: 1px solid #565656  !important;
   }
   .bt-custom:hover{
-    color: white  !important;
     border: 1px solid #ffa300 !important;
     background: #ffa300;
+  }
+
+  .bt-custom:hover > a{
+    color: white  !important;
+    text-decoration: none;
+  }
+
+  .bt-card a{
+    color: #ffa300;
+    text-decoration: none;
+  }
+  .bt-card a:hover{
+    color: white;
+    text-decoration: none;
   }
 </style>

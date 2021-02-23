@@ -18,24 +18,67 @@
           <custom-logo></custom-logo>
 
           <b-nav vertical id="sidebar-container" >
-            <b-nav-item  href="/" class="nav-item">الرئيسة</b-nav-item>
-            <b-nav-item href="/construction" class="nav-item">أعمالنا</b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/">الرئيسة</router-link>
+            </b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/construction">أعمالنا</router-link>
+            </b-nav-item>
+
             <b-nav-item-dropdown text="قاعات" right >
-              <b-dropdown-item href="/construction">قاعات الشرقية</b-dropdown-item>
-              <b-dropdown-item href="/construction">قاعت الرياض</b-dropdown-item>
+
+              <b-dropdown-item>
+                <router-link to="/construction">قاعات الشرقية</router-link>
+              </b-dropdown-item>
+
+              <b-dropdown-item>
+                <router-link to="/construction">قاعت الرياض</router-link>
+              </b-dropdown-item>
+
             </b-nav-item-dropdown>
-            <b-nav-item href="/construction" class="nav-item">أضف قاعتك</b-nav-item>
-            <b-nav-item href="/construction" class="nav-item">طلب تقسيط القاعة</b-nav-item>
-            <b-nav-item href="/construction" class="nav-item">تحميل التطبيق</b-nav-item>
-            <b-nav-item href="/construction" class="nav-item">المدونة</b-nav-item>
+
+            <b-nav-item class="nav-item">
+                <router-link to="/construction">أضف قاعتك</router-link>
+            </b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/construction">طلب تقسيط القاعة</router-link>
+            </b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/construction">تحميل التطبيق</router-link>
+            </b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/construction">المدونة</router-link>           
+            </b-nav-item>
+            
             <b-nav-item-dropdown 
               text="تواصل معنا"
               right>
-              <b-dropdown-item href="/construction">عن قصور</b-dropdown-item>
-              <b-dropdown-item href="/construction">واتساب</b-dropdown-item>
-              <b-dropdown-item href="/construction">راسلنا</b-dropdown-item>
+
+              <b-dropdown-item>
+                <router-link to="/construction">
+                   عن قصو
+                </router-link>
+              </b-dropdown-item>
+
+              <b-dropdown-item>
+                <router-link to="/construction">واتساب</router-link>
+              </b-dropdown-item>
+
+              <b-dropdown-item>
+                <router-link to="/construction">راسلنا</router-link>
+              </b-dropdown-item>
+
             </b-nav-item-dropdown>
-            <b-nav-item href="/construction" class="nav-item">شروط الاستخدام</b-nav-item>
+
+            <b-nav-item class="nav-item">
+              <router-link to="/construction">شروط الاستخدام</router-link>
+            </b-nav-item>
+
           </b-nav>
 
         </nav>

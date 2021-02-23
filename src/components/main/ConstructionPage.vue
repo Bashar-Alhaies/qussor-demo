@@ -5,9 +5,10 @@
         <p class="lead text-center">هذا الموقع تحت الانشاء وهو مجرد نموذج مبدئي</p>
         <b-button
           id="bt-construction"
-          variant="outline"
-          href="/"
-        >الصفحة الرئيسية</b-button>
+          class="bt-custom bt-card"
+        >
+        <router-link to="/">الصفحة الرئيسية</router-link>
+        </b-button>
       </b-col>
     </b-row>
   </b-container>

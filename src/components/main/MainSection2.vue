@@ -22,7 +22,9 @@
             </b-card-text>
 
             <div v-if="card1.bt">
-              <b-button class="bt-custom" href="/construction" variant="outline">{{ card1.btTxt }} </b-button>
+              <b-button class="bt-custom bt-card" variant="outline">
+                <router-link to="/construction">{{ card1.btTxt }}</router-link>
+              </b-button>
             </div>
           </b-card>
         </b-col>
@@ -39,7 +41,9 @@
             </b-card-text>
 
             <div v-if="card2.bt">
-              <b-button class="bt-custom" href="/construction"  variant="outline">{{ card2.btTxt }} </b-button>
+              <b-button class="bt-custom bt-card" variant="outline">
+                <router-link to="/construction">{{ card2.btTxt }}</router-link>
+              </b-button>
             </div>
           </b-card>
         </b-col>
@@ -58,7 +62,9 @@
             </b-card-text>
 
             <div v-if="card3.bt">
-              <b-button  class="bt-custom"  href="/construction" variant="outline">{{ card3.btTxt }} </b-button>
+              <b-button  class="bt-custom bt-card" variant="outline">
+                <router-link to="/construction">{{ card3.btTxt }}</router-link>
+               </b-button>
             </div>
             </b-card>
         </b-col>
@@ -74,7 +80,9 @@
               {{ card4.text }}
             </b-card-text>
             <div v-if="card4.bt">
-              <b-button class="bt-custom"  href="/construction"  variant="outline">{{ card4.btTxt }} </b-button>
+              <b-button class="bt-custom bt-card" variant="outline">
+                <router-link to="/construction">{{ card4.btTxt }}</router-link>
+              </b-button>
             </div>
           </b-card>
         </b-col>
